@@ -25,6 +25,7 @@ fun main() {
 
     // Kotlin은 동일성에 ===를 사용, 동등성에 ==를 호출한다.
     // 즉, ==를 사용하면 간접적으로 equals를 호출해준다.
+    // = 이 하나 더 붙으면 주소까지 같은 지 완전 비교하자라는 의미로 이해하면 좋다.
     println(m1 === m3)
     println(m2 === m3)
     println(m3 == m4) // @equals, @hashCode override
