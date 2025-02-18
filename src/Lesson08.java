@@ -1,8 +1,14 @@
+import sample.JavaPerson;
+
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 
 public class Lesson08 {
+
+    public static void main(String[] args) {
+        JavaPerson person = new JavaPerson("hun", -1);
+    }
 
     public void repeat(String s, int n, boolean useNewLine) {
         try (BufferedWriter bw = new BufferedWriter(

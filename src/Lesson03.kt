@@ -1,4 +1,4 @@
-import sample.Person
+import sample.KotlinPerson
 
 
 fun main() {
@@ -14,7 +14,7 @@ fun main() {
     // val num5: Long = num4.toLong() 컴파일 오류
     val num5: Long = num4?.toLong() ?: 0
 
-    val print = print(Person("hun", 20))
+    val print = print(KotlinPerson("hun", 20))
     println(print)
 
     val name = "hun"
@@ -41,7 +41,7 @@ fun main() {
  */
 fun printAgeIfPerson(o: Any) {
     // Java: instanceof <=> Kotlin: is
-    if (o is Person) {
+    if (o is KotlinPerson) {
         // Java: (Person) o <=> Kotlin: o as Person
         // Kotlin은 타입을 추론하기 때문에 캐스팅을 하지 않아도 된다. (스마트 캐스트)
         // val person = o as Person
@@ -58,18 +58,18 @@ fun printAgeIfPerson(o: Any) {
  */
 fun printAgeIfPersonNull(o: Any?) {
 //    val person = o as? Person
-    val person = o as? Person
+    val person = o as? KotlinPerson
     println(person?.age)
 }
 
 fun printAgeIsNotPerson(o: Any): Boolean {
     // Java: !(o instanceof Person(_, _));
-    return o !is Person
+    return o !is KotlinPerson
 }
 
 // String interpolation
 fun print(o: Any?): String? {
-    if (o is Person) {
+    if (o is KotlinPerson) {
         // return "사람의 이름은 ${o.name}이고 나이는 ${o.age}세 입니다."
         return "사람의 이름은 ${o.name}이고 나이는 ${o.age}세 입니다."
     }
