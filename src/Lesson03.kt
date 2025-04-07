@@ -30,7 +30,7 @@ fun main() {
     // String str = "ABC";
     // char ch = str.charAt(1);
     val str = "ABC"
-    val ch = str[1]
+    val ch = str[1] // B
     println(ch)
 }
 

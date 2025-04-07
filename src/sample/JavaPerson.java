@@ -18,6 +18,10 @@ public class JavaPerson {
         }
     }
 
+    public boolean isAdult() {
+        return this.age >= 20;
+    }
+
     public JavaPerson(String name) {
         this.name = name;
         this.age = 1;
