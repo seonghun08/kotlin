@@ -1,5 +1,3 @@
-package sample
-
 fun main() {
     val derived = Derived(10)
     println(derived.num)
