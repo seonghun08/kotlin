@@ -37,6 +37,13 @@ fun max1(a: Int, b: Int): Int {
 // 또한 값이 추론되기 때문에 함수 뒤 ": Int"를 생략할 수 있다.
 fun max2(a: Int, b: Int) = if (a > b) a else b
 
+fun max3(a: Int, b: Int) =
+    when {
+        a > b -> a
+        else -> b
+    }
+
+
 fun repeat(
     s: String,
     n: Int = 3,
